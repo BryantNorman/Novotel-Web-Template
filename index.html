@@ -1,0 +1,1723 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Structure</title>
+  </head>
+  <style>
+    * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+
+        body {
+            font-size: 16px;
+            font-family: 'Work Sans', sans-serif;
+            color: #f1f1f1;
+            margin: 0;
+            padding: 0;
+            max-width: 900px; 
+            margin: 0 auto;
+        }
+
+        /* Header Styles */
+        .Header {
+            width: 100%;
+            height: 2%;
+            overflow-x: auto;
+            white-space: nowrap;
+            background-color: #333;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            border: solid white 2px;
+        }
+
+        .Head-item {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #fff;
+            text-decoration: none;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .Head-item:hover {
+            background-color: #555;
+        }
+        /* Header Styles Ends */
+
+        /* Section-Image Styles */
+        .Image-container {
+            position: relative;
+        }
+
+        .Image-url {
+            text-align: center;
+        }
+
+        .Image-url img{
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .Image-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 32px;
+            font-weight: bold;
+            text-align: center;
+            z-index: 1;
+        }
+        /* Section-Image Styles Ends */
+
+        /* Section-Text Container Styles */
+        .Text-container {
+            background-color: black;
+            padding: 0% 10% 10% 10%;
+            text-align: center;
+        }
+
+        .Normal-text p {
+            color: #fff;
+        }
+        /* Section-Text Container Styles Ends */
+
+        /* Section Table Styles  */
+        .table-container {
+            overflow-x: auto;
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        thead {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        tbody tr {
+            background-color: #000000;
+        }
+
+
+        tr>th:first-child,tr>td:first-child {
+            position: sticky;
+            left: 0;
+            background: rgb(255, 255, 255);
+            color:rgb(0, 0, 0);
+        }
+        /* Section Table Styles  */
+
+
+        /* Footer Styles */
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #fff;
+            padding: 10px;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 900px; 
+            margin: 0 auto;
+            height: 6%;
+        }
+
+        button {
+            background-color: #EE7371;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+
+        .share-btn {
+            background-color: #EE7371;
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        /* Footer Styles Ends */
+
+        /* Additional Elements Styles */
+        hr{
+            margin: 16px auto;
+            width: 50%;
+        }
+
+        /* Dine-Box Styles */
+        .Dine p{
+            border: 2px solid white;
+            /* border-top: none; */
+            padding: 10px;
+            text-align: center;
+            background-color: black;
+            color: white;
+            margin: 0 auto;
+            margin-bottom: 16px;
+            white-space: nowrap;
+            width: 220px;
+        }
+        /* Dine-Box Styles Ends */
+
+        /* Additional Elements Styles Ends */
+  </style>
+  <body>
+    <!-- Sticky Header -->
+    <div class="Header">
+        <div class="Head-item" onclick="scrollToSection('OUR-SPACES')">OUR SPACES</div>
+        <div class="Head-item" onclick="scrollToSection('SET MENU 1')">SET MENU 1</div>
+        <div class="Head-item" onclick="scrollToSection('SET MENU 2')">SET MENU 2</div>
+        <div class="Head-item" onclick="scrollToSection('FORK BUFFET')">FORK BUFFET</div>
+        <div class="Head-item" onclick="scrollToSection('FINGER BUFFET')">FINGER BUFFET</div>
+        <div class="Head-item" onclick="scrollToSection('DAY DELEGATE PACKAGES')">DAY DELEGATE PACKAGES</div>
+        <div class="Head-item" onclick="scrollToSection('ROOM ONLY HIRE')">ROOM ONLY HIRE</div>
+        <div class="Head-item" onclick="scrollToSection('BABY SHOWER PACKAGE')">BABY SHOWER PACKAGE</div>
+        <div class="Head-item" onclick="scrollToSection('REMEMBRANCE PACKAGE')">REMEMBRANCE PACKAGE</div>
+        <div class="Head-item" onclick="scrollToSection('CONTACT US')">CONTACT US</div>
+    </div>
+
+    <!-- Section -->
+    <section class="Main-section" style="margin-bottom: 20px;">
+        <!-- Section-1 -->
+        <section>
+        <section class="Image-container">
+            <div class="Image-url">
+                <!-- Inline image url with external Style -->
+                <img src="Assets/OurSpaces.jpg" alt="OUR SPACES"> 
+            </div>
+            <div class="Image-text">
+                <P>OUR SPACES</P>
+            </div>
+        </section>  
+
+        <!-- Content -->
+        <section class="Text-container" id="OUR-SPACES">
+            <!-- Dine-Box -->
+            <div class="Dine">
+                <p><strong></strong>Dine</strong> - £30.00 per person</p>
+            </div>
+
+            <!-- Normal Content -->
+            <div class="Normal-text">
+                <p>
+                    Meet. Train. Play. At Novotel Edinburgh Park, the ultimate 4-star venue for all your 
+                    <br>meeting and event needs. <br> 
+                    Our well-equipped event spaces can accommodate parties of up to 180 guests. <br>
+                    Facilities include experienced event staff, high speed WiFi access, fully air- <br> 
+                    conditioned rooms and high quality audio visual equipment. <br> 
+                    Located next to Edinburgh Park train station and directly off the M8, Novotel <br> 
+                    Edinburgh Park benefits from exceptional access. Edinburgh Airport and City Centre <br> 
+                    can be accessed via regular buses or trams.
+                    <hr>
+                </p>
+                <br />
+                <p>Enter a world of possibilities.</p>
+            </div>
+
+            <!-- Table -->
+            <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Area</th>
+                        <th>Height</th>
+                        <th>Theatre</th>
+                        <th>U-shape</th>
+                        <th>Boardroom</th>
+                        <th>Classroom</th>
+                        <th>Cabaret</th>
+                        <th>Banquet</th>           
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Hermiston Suite</td>
+                        <td>174</td>
+                        <td>3.0</td>
+                        <td>180</td>
+                        <td>64</td>
+                        <td>60</td>
+                        <td>90</td>
+                        <td>120</td>
+                        <td>150</td>
+                    </tr>
+                    <tr>
+                        <td>Hermiston 1&2</td>
+                        <td>116</td>
+                        <td>3.0</td>
+                        <td>100</td>
+                        <td>44</td>
+                        <td>40</td>
+                        <td>60</td>
+                        <td>64</td>
+                        <td>80</td>
+                    </tr>
+                    <tr>
+                        <td>Hermiston 1</td>
+                        <td>58</td>
+                        <td>3.0</td>
+                        <td>50</td>
+                        <td>24</td>
+                        <td>20</td>
+                        <td>32</td>
+                        <td>32</td>
+                        <td>40</td>
+                      </tr>
+                      <tr>
+                        <td>Hermiston 2</td>
+                        <td>58</td>
+                        <td>3.0</td>
+                        <td>50</td>
+                        <td>24</td>
+                        <td>20</td>
+                        <td>32</td>
+                        <td>32</td>
+                        <td>40</td>
+                      </tr>
+                      <tr>
+                        <td>Hermiston 3</td>
+                        <td>58</td>
+                        <td>3.0</td>
+                        <td>50</td>
+                        <td>24</td>
+                        <td>20</td>
+                        <td>32</td>
+                        <td>32</td>
+                        <td>40</td>
+                      </tr>
+                      <tr>
+                        <td>Executive Boardroom</td>
+                        <td>24</td>
+                        <td>2.8</td>
+                        <td>_</td>
+                        <td>_</td>
+                        <td>10</td>
+                        <td>_</td>
+                        <td>_</td>
+                        <td>10</td>
+                      </tr>
+                      <tr>
+                        <td>Turnhouse</td>
+                        <td>48</td>
+                        <td>2.8</td>
+                        <td>36</td>
+                        <td>16</td>
+                        <td>16</td>
+                        <td>20</td>
+                        <td>_</td>
+                        <td>16</td>
+                      </tr>
+                      <tr>
+                        <td>Maybury</td>
+                        <td>24</td>
+                        <td>2.8</td>
+                        <td>20</td>
+                        <td>_</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>_</td>
+                        <td>10</td>
+                      </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+            </div>
+        </section>
+        </section>
+
+        <!-- Section-2 -->
+        <section>
+            <section class="Image-container">
+                <div class="Image-url">
+                    <!-- Inline image url with external Style -->
+                    <img src="Assets/OurSpaces.jpg" alt="SET MENU 1"> 
+                </div>
+                <div class="Image-text">
+                    <P>SET MENU 1</P>
+                </div>
+            </section>  
+    
+            <!-- Content -->
+            <section class="Text-container" id="SET MENU 1">
+                <!-- Dine-Box -->
+                <div class="Dine">
+                    <p><strong></strong>Dine</strong> - £30.00 per person</p>
+                </div>
+    
+                <!-- Normal Content -->
+                <div class="Normal-text">
+                    <p>
+                        Meet. Train. Play. At Novotel Edinburgh Park, the ultimate 4-star venue for all your 
+                        <br>meeting and event needs. <br> 
+                        Our well-equipped event spaces can accommodate parties of up to 180 guests. <br>
+                        Facilities include experienced event staff, high speed WiFi access, fully air- <br> 
+                        conditioned rooms and high quality audio visual equipment. <br> 
+                        Located next to Edinburgh Park train station and directly off the M8, Novotel <br> 
+                        Edinburgh Park benefits from exceptional access. Edinburgh Airport and City Centre <br> 
+                        can be accessed via regular buses or trams.
+                        <hr>
+                    </p>
+                    <br />
+                    <p>Enter a world of possibilities.</p>
+                </div>
+    
+                <!-- Table -->
+                <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Area</th>
+                            <th>Height</th>
+                            <th>Theatre</th>
+                            <th>U-shape</th>
+                            <th>Boardroom</th>
+                            <th>Classroom</th>
+                            <th>Cabaret</th>
+                            <th>Banquet</th>           
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Hermiston Suite</td>
+                            <td>174</td>
+                            <td>3.0</td>
+                            <td>180</td>
+                            <td>64</td>
+                            <td>60</td>
+                            <td>90</td>
+                            <td>120</td>
+                            <td>150</td>
+                        </tr>
+                        <tr>
+                            <td>Hermiston 1&2</td>
+                            <td>116</td>
+                            <td>3.0</td>
+                            <td>100</td>
+                            <td>44</td>
+                            <td>40</td>
+                            <td>60</td>
+                            <td>64</td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td>Hermiston 1</td>
+                            <td>58</td>
+                            <td>3.0</td>
+                            <td>50</td>
+                            <td>24</td>
+                            <td>20</td>
+                            <td>32</td>
+                            <td>32</td>
+                            <td>40</td>
+                          </tr>
+                          <tr>
+                            <td>Hermiston 2</td>
+                            <td>58</td>
+                            <td>3.0</td>
+                            <td>50</td>
+                            <td>24</td>
+                            <td>20</td>
+                            <td>32</td>
+                            <td>32</td>
+                            <td>40</td>
+                          </tr>
+                          <tr>
+                            <td>Hermiston 3</td>
+                            <td>58</td>
+                            <td>3.0</td>
+                            <td>50</td>
+                            <td>24</td>
+                            <td>20</td>
+                            <td>32</td>
+                            <td>32</td>
+                            <td>40</td>
+                          </tr>
+                          <tr>
+                            <td>Executive Boardroom</td>
+                            <td>24</td>
+                            <td>2.8</td>
+                            <td>_</td>
+                            <td>_</td>
+                            <td>10</td>
+                            <td>_</td>
+                            <td>_</td>
+                            <td>10</td>
+                          </tr>
+                          <tr>
+                            <td>Turnhouse</td>
+                            <td>48</td>
+                            <td>2.8</td>
+                            <td>36</td>
+                            <td>16</td>
+                            <td>16</td>
+                            <td>20</td>
+                            <td>_</td>
+                            <td>16</td>
+                          </tr>
+                          <tr>
+                            <td>Maybury</td>
+                            <td>24</td>
+                            <td>2.8</td>
+                            <td>20</td>
+                            <td>_</td>
+                            <td>12</td>
+                            <td>12</td>
+                            <td>_</td>
+                            <td>10</td>
+                          </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+                </div>
+            </section>
+            </section>
+
+        <!-- Section-3 -->
+        <section>
+            <section class="Image-container">
+                <div class="Image-url">
+                    <!-- Inline image url with external Style -->
+                    <img src="Assets/OurSpaces.jpg" alt="SET MENU 2"> 
+                </div>
+                <div class="Image-text">
+                    <P>SET MENU 2</P>
+                </div>
+            </section>  
+    
+            <!-- Content -->
+            <section class="Text-container" id="SET MENU 2">
+                <!-- Dine-Box -->
+                <div class="Dine">
+                    <p><strong></strong>Dine</strong> - £30.00 per person</p>
+                </div>
+    
+                <!-- Normal Content -->
+                <div class="Normal-text">
+                    <p>
+                        Meet. Train. Play. At Novotel Edinburgh Park, the ultimate 4-star venue for all your 
+                        <br>meeting and event needs. <br> 
+                        Our well-equipped event spaces can accommodate parties of up to 180 guests. <br>
+                        Facilities include experienced event staff, high speed WiFi access, fully air- <br> 
+                        conditioned rooms and high quality audio visual equipment. <br> 
+                        Located next to Edinburgh Park train station and directly off the M8, Novotel <br> 
+                        Edinburgh Park benefits from exceptional access. Edinburgh Airport and City Centre <br> 
+                        can be accessed via regular buses or trams.
+                        <hr>
+                    </p>
+                    <br />
+                    <p>Enter a world of possibilities.</p>
+                </div>
+    
+                <!-- Table -->
+                <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Area</th>
+                            <th>Height</th>
+                            <th>Theatre</th>
+                            <th>U-shape</th>
+                            <th>Boardroom</th>
+                            <th>Classroom</th>
+                            <th>Cabaret</th>
+                            <th>Banquet</th>           
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Hermiston Suite</td>
+                            <td>174</td>
+                            <td>3.0</td>
+                            <td>180</td>
+                            <td>64</td>
+                            <td>60</td>
+                            <td>90</td>
+                            <td>120</td>
+                            <td>150</td>
+                        </tr>
+                        <tr>
+                            <td>Hermiston 1&2</td>
+                            <td>116</td>
+                            <td>3.0</td>
+                            <td>100</td>
+                            <td>44</td>
+                            <td>40</td>
+                            <td>60</td>
+                            <td>64</td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td>Hermiston 1</td>
+                            <td>58</td>
+                            <td>3.0</td>
+                            <td>50</td>
+                            <td>24</td>
+                            <td>20</td>
+                            <td>32</td>
+                            <td>32</td>
+                            <td>40</td>
+                          </tr>
+                          <tr>
+                            <td>Hermiston 2</td>
+                            <td>58</td>
+                            <td>3.0</td>
+                            <td>50</td>
+                            <td>24</td>
+                            <td>20</td>
+                            <td>32</td>
+                            <td>32</td>
+                            <td>40</td>
+                          </tr>
+                          <tr>
+                            <td>Hermiston 3</td>
+                            <td>58</td>
+                            <td>3.0</td>
+                            <td>50</td>
+                            <td>24</td>
+                            <td>20</td>
+                            <td>32</td>
+                            <td>32</td>
+                            <td>40</td>
+                          </tr>
+                          <tr>
+                            <td>Executive Boardroom</td>
+                            <td>24</td>
+                            <td>2.8</td>
+                            <td>_</td>
+                            <td>_</td>
+                            <td>10</td>
+                            <td>_</td>
+                            <td>_</td>
+                            <td>10</td>
+                          </tr>
+                          <tr>
+                            <td>Turnhouse</td>
+                            <td>48</td>
+                            <td>2.8</td>
+                            <td>36</td>
+                            <td>16</td>
+                            <td>16</td>
+                            <td>20</td>
+                            <td>_</td>
+                            <td>16</td>
+                          </tr>
+                          <tr>
+                            <td>Maybury</td>
+                            <td>24</td>
+                            <td>2.8</td>
+                            <td>20</td>
+                            <td>_</td>
+                            <td>12</td>
+                            <td>12</td>
+                            <td>_</td>
+                            <td>10</td>
+                          </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+                </div>
+            </section>
+            </section>
+
+        <!-- Section-4 -->
+        <section>
+            <section class="Image-container">
+                <div class="Image-url">
+                    <!-- Inline image url with external Style -->
+                    <img src="Assets/OurSpaces.jpg" alt="FORK BUFFET"> 
+                </div>
+                <div class="Image-text">
+                    <P>FORK BUFFET</P>
+                </div>
+            </section>  
+    
+            <!-- Content -->
+            <section class="Text-container" id="FORK BUFFET">
+                <!-- Dine-Box -->
+                <div class="Dine">
+                    <p><strong></strong>Dine</strong> - £30.00 per person</p>
+                </div>
+    
+                <!-- Normal Content -->
+                <div class="Normal-text">
+                    <p>
+                        Meet. Train. Play. At Novotel Edinburgh Park, the ultimate 4-star venue for all your 
+                        <br>meeting and event needs. <br> 
+                        Our well-equipped event spaces can accommodate parties of up to 180 guests. <br>
+                        Facilities include experienced event staff, high speed WiFi access, fully air- <br> 
+                        conditioned rooms and high quality audio visual equipment. <br> 
+                        Located next to Edinburgh Park train station and directly off the M8, Novotel <br> 
+                        Edinburgh Park benefits from exceptional access. Edinburgh Airport and City Centre <br> 
+                        can be accessed via regular buses or trams.
+                        <hr>
+                    </p>
+                    <br />
+                    <p>Enter a world of possibilities.</p>
+                </div>
+    
+                <!-- Table -->
+                <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Area</th>
+                            <th>Height</th>
+                            <th>Theatre</th>
+                            <th>U-shape</th>
+                            <th>Boardroom</th>
+                            <th>Classroom</th>
+                            <th>Cabaret</th>
+                            <th>Banquet</th>           
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Hermiston Suite</td>
+                            <td>174</td>
+                            <td>3.0</td>
+                            <td>180</td>
+                            <td>64</td>
+                            <td>60</td>
+                            <td>90</td>
+                            <td>120</td>
+                            <td>150</td>
+                        </tr>
+                        <tr>
+                            <td>Hermiston 1&2</td>
+                            <td>116</td>
+                            <td>3.0</td>
+                            <td>100</td>
+                            <td>44</td>
+                            <td>40</td>
+                            <td>60</td>
+                            <td>64</td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td>Hermiston 1</td>
+                            <td>58</td>
+                            <td>3.0</td>
+                            <td>50</td>
+                            <td>24</td>
+                            <td>20</td>
+                            <td>32</td>
+                            <td>32</td>
+                            <td>40</td>
+                          </tr>
+                          <tr>
+                            <td>Hermiston 2</td>
+                            <td>58</td>
+                            <td>3.0</td>
+                            <td>50</td>
+                            <td>24</td>
+                            <td>20</td>
+                            <td>32</td>
+                            <td>32</td>
+                            <td>40</td>
+                          </tr>
+                          <tr>
+                            <td>Hermiston 3</td>
+                            <td>58</td>
+                            <td>3.0</td>
+                            <td>50</td>
+                            <td>24</td>
+                            <td>20</td>
+                            <td>32</td>
+                            <td>32</td>
+                            <td>40</td>
+                          </tr>
+                          <tr>
+                            <td>Executive Boardroom</td>
+                            <td>24</td>
+                            <td>2.8</td>
+                            <td>_</td>
+                            <td>_</td>
+                            <td>10</td>
+                            <td>_</td>
+                            <td>_</td>
+                            <td>10</td>
+                          </tr>
+                          <tr>
+                            <td>Turnhouse</td>
+                            <td>48</td>
+                            <td>2.8</td>
+                            <td>36</td>
+                            <td>16</td>
+                            <td>16</td>
+                            <td>20</td>
+                            <td>_</td>
+                            <td>16</td>
+                          </tr>
+                          <tr>
+                            <td>Maybury</td>
+                            <td>24</td>
+                            <td>2.8</td>
+                            <td>20</td>
+                            <td>_</td>
+                            <td>12</td>
+                            <td>12</td>
+                            <td>_</td>
+                            <td>10</td>
+                          </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+                </div>
+            </section>
+            </section>
+        
+            <!-- Section-5 -->
+        <section>
+            <section class="Image-container">
+                <div class="Image-url">
+                    <!-- Inline image url with external Style -->
+                    <img src="Assets/OurSpaces.jpg" alt="FINGER BUFFET"> 
+                </div>
+                <div class="Image-text">
+                    <P>FINGER BUFFET</P>
+                </div>
+            </section>  
+    
+            <!-- Content -->
+            <section class="Text-container" id="FINGER BUFFET">
+                <!-- Dine-Box -->
+                <div class="Dine">
+                    <p><strong></strong>Dine</strong> - £30.00 per person</p>
+                </div>
+    
+                <!-- Normal Content -->
+                <div class="Normal-text">
+                    <p>
+                        Meet. Train. Play. At Novotel Edinburgh Park, the ultimate 4-star venue for all your 
+                        <br>meeting and event needs. <br> 
+                        Our well-equipped event spaces can accommodate parties of up to 180 guests. <br>
+                        Facilities include experienced event staff, high speed WiFi access, fully air- <br> 
+                        conditioned rooms and high quality audio visual equipment. <br> 
+                        Located next to Edinburgh Park train station and directly off the M8, Novotel <br> 
+                        Edinburgh Park benefits from exceptional access. Edinburgh Airport and City Centre <br> 
+                        can be accessed via regular buses or trams.
+                        <hr>
+                    </p>
+                    <br />
+                    <p>Enter a world of possibilities.</p>
+                </div>
+    
+                <!-- Table -->
+                <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Area</th>
+                            <th>Height</th>
+                            <th>Theatre</th>
+                            <th>U-shape</th>
+                            <th>Boardroom</th>
+                            <th>Classroom</th>
+                            <th>Cabaret</th>
+                            <th>Banquet</th>           
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Hermiston Suite</td>
+                            <td>174</td>
+                            <td>3.0</td>
+                            <td>180</td>
+                            <td>64</td>
+                            <td>60</td>
+                            <td>90</td>
+                            <td>120</td>
+                            <td>150</td>
+                        </tr>
+                        <tr>
+                            <td>Hermiston 1&2</td>
+                            <td>116</td>
+                            <td>3.0</td>
+                            <td>100</td>
+                            <td>44</td>
+                            <td>40</td>
+                            <td>60</td>
+                            <td>64</td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td>Hermiston 1</td>
+                            <td>58</td>
+                            <td>3.0</td>
+                            <td>50</td>
+                            <td>24</td>
+                            <td>20</td>
+                            <td>32</td>
+                            <td>32</td>
+                            <td>40</td>
+                          </tr>
+                          <tr>
+                            <td>Hermiston 2</td>
+                            <td>58</td>
+                            <td>3.0</td>
+                            <td>50</td>
+                            <td>24</td>
+                            <td>20</td>
+                            <td>32</td>
+                            <td>32</td>
+                            <td>40</td>
+                          </tr>
+                          <tr>
+                            <td>Hermiston 3</td>
+                            <td>58</td>
+                            <td>3.0</td>
+                            <td>50</td>
+                            <td>24</td>
+                            <td>20</td>
+                            <td>32</td>
+                            <td>32</td>
+                            <td>40</td>
+                          </tr>
+                          <tr>
+                            <td>Executive Boardroom</td>
+                            <td>24</td>
+                            <td>2.8</td>
+                            <td>_</td>
+                            <td>_</td>
+                            <td>10</td>
+                            <td>_</td>
+                            <td>_</td>
+                            <td>10</td>
+                          </tr>
+                          <tr>
+                            <td>Turnhouse</td>
+                            <td>48</td>
+                            <td>2.8</td>
+                            <td>36</td>
+                            <td>16</td>
+                            <td>16</td>
+                            <td>20</td>
+                            <td>_</td>
+                            <td>16</td>
+                          </tr>
+                          <tr>
+                            <td>Maybury</td>
+                            <td>24</td>
+                            <td>2.8</td>
+                            <td>20</td>
+                            <td>_</td>
+                            <td>12</td>
+                            <td>12</td>
+                            <td>_</td>
+                            <td>10</td>
+                          </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+                </div>
+            </section>
+            </section>
+
+        <!-- Section-6 -->
+        <section>
+            <section class="Image-container">
+                <div class="Image-url">
+                    <!-- Inline image url with external Style -->
+                    <img src="Assets/OurSpaces.jpg" alt="OUR SPACES"> 
+                </div>
+                <div class="Image-text">
+                    <P>OUR SPACES</P>
+                </div>
+            </section>  
+    
+            <!-- Content -->
+            <section class="Text-container" id="OUR-SPACES">
+                <!-- Dine-Box -->
+                <div class="Dine">
+                    <p><strong></strong>Dine</strong> - £30.00 per person</p>
+                </div>
+    
+                <!-- Normal Content -->
+                <div class="Normal-text">
+                    <p>
+                        Meet. Train. Play. At Novotel Edinburgh Park, the ultimate 4-star venue for all your 
+                        <br>meeting and event needs. <br> 
+                        Our well-equipped event spaces can accommodate parties of up to 180 guests. <br>
+                        Facilities include experienced event staff, high speed WiFi access, fully air- <br> 
+                        conditioned rooms and high quality audio visual equipment. <br> 
+                        Located next to Edinburgh Park train station and directly off the M8, Novotel <br> 
+                        Edinburgh Park benefits from exceptional access. Edinburgh Airport and City Centre <br> 
+                        can be accessed via regular buses or trams.
+                        <hr>
+                    </p>
+                    <br />
+                    <p>Enter a world of possibilities.</p>
+                </div>
+    
+                <!-- Table -->
+                <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Area</th>
+                            <th>Height</th>
+                            <th>Theatre</th>
+                            <th>U-shape</th>
+                            <th>Boardroom</th>
+                            <th>Classroom</th>
+                            <th>Cabaret</th>
+                            <th>Banquet</th>           
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Hermiston Suite</td>
+                            <td>174</td>
+                            <td>3.0</td>
+                            <td>180</td>
+                            <td>64</td>
+                            <td>60</td>
+                            <td>90</td>
+                            <td>120</td>
+                            <td>150</td>
+                        </tr>
+                        <tr>
+                            <td>Hermiston 1&2</td>
+                            <td>116</td>
+                            <td>3.0</td>
+                            <td>100</td>
+                            <td>44</td>
+                            <td>40</td>
+                            <td>60</td>
+                            <td>64</td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td>Hermiston 1</td>
+                            <td>58</td>
+                            <td>3.0</td>
+                            <td>50</td>
+                            <td>24</td>
+                            <td>20</td>
+                            <td>32</td>
+                            <td>32</td>
+                            <td>40</td>
+                          </tr>
+                          <tr>
+                            <td>Hermiston 2</td>
+                            <td>58</td>
+                            <td>3.0</td>
+                            <td>50</td>
+                            <td>24</td>
+                            <td>20</td>
+                            <td>32</td>
+                            <td>32</td>
+                            <td>40</td>
+                          </tr>
+                          <tr>
+                            <td>Hermiston 3</td>
+                            <td>58</td>
+                            <td>3.0</td>
+                            <td>50</td>
+                            <td>24</td>
+                            <td>20</td>
+                            <td>32</td>
+                            <td>32</td>
+                            <td>40</td>
+                          </tr>
+                          <tr>
+                            <td>Executive Boardroom</td>
+                            <td>24</td>
+                            <td>2.8</td>
+                            <td>_</td>
+                            <td>_</td>
+                            <td>10</td>
+                            <td>_</td>
+                            <td>_</td>
+                            <td>10</td>
+                          </tr>
+                          <tr>
+                            <td>Turnhouse</td>
+                            <td>48</td>
+                            <td>2.8</td>
+                            <td>36</td>
+                            <td>16</td>
+                            <td>16</td>
+                            <td>20</td>
+                            <td>_</td>
+                            <td>16</td>
+                          </tr>
+                          <tr>
+                            <td>Maybury</td>
+                            <td>24</td>
+                            <td>2.8</td>
+                            <td>20</td>
+                            <td>_</td>
+                            <td>12</td>
+                            <td>12</td>
+                            <td>_</td>
+                            <td>10</td>
+                          </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+                </div>
+            </section>
+            </section>
+
+        <!-- Section-7 -->
+        <section>
+            <section class="Image-container">
+                <div class="Image-url">
+                    <!-- Inline image url with external Style -->
+                    <img src="Assets/OurSpaces.jpg" alt="OUR SPACES"> 
+                </div>
+                <div class="Image-text">
+                    <P>OUR SPACES</P>
+                </div>
+            </section>  
+    
+            <!-- Content -->
+            <section class="Text-container" id="OUR-SPACES">
+                <!-- Dine-Box -->
+                <div class="Dine">
+                    <p><strong></strong>Dine</strong> - £30.00 per person</p>
+                </div>
+    
+                <!-- Normal Content -->
+                <div class="Normal-text">
+                    <p>
+                        Meet. Train. Play. At Novotel Edinburgh Park, the ultimate 4-star venue for all your 
+                        <br>meeting and event needs. <br> 
+                        Our well-equipped event spaces can accommodate parties of up to 180 guests. <br>
+                        Facilities include experienced event staff, high speed WiFi access, fully air- <br> 
+                        conditioned rooms and high quality audio visual equipment. <br> 
+                        Located next to Edinburgh Park train station and directly off the M8, Novotel <br> 
+                        Edinburgh Park benefits from exceptional access. Edinburgh Airport and City Centre <br> 
+                        can be accessed via regular buses or trams.
+                        <hr>
+                    </p>
+                    <br />
+                    <p>Enter a world of possibilities.</p>
+                </div>
+    
+                <!-- Table -->
+                <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Area</th>
+                            <th>Height</th>
+                            <th>Theatre</th>
+                            <th>U-shape</th>
+                            <th>Boardroom</th>
+                            <th>Classroom</th>
+                            <th>Cabaret</th>
+                            <th>Banquet</th>           
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Hermiston Suite</td>
+                            <td>174</td>
+                            <td>3.0</td>
+                            <td>180</td>
+                            <td>64</td>
+                            <td>60</td>
+                            <td>90</td>
+                            <td>120</td>
+                            <td>150</td>
+                        </tr>
+                        <tr>
+                            <td>Hermiston 1&2</td>
+                            <td>116</td>
+                            <td>3.0</td>
+                            <td>100</td>
+                            <td>44</td>
+                            <td>40</td>
+                            <td>60</td>
+                            <td>64</td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td>Hermiston 1</td>
+                            <td>58</td>
+                            <td>3.0</td>
+                            <td>50</td>
+                            <td>24</td>
+                            <td>20</td>
+                            <td>32</td>
+                            <td>32</td>
+                            <td>40</td>
+                          </tr>
+                          <tr>
+                            <td>Hermiston 2</td>
+                            <td>58</td>
+                            <td>3.0</td>
+                            <td>50</td>
+                            <td>24</td>
+                            <td>20</td>
+                            <td>32</td>
+                            <td>32</td>
+                            <td>40</td>
+                          </tr>
+                          <tr>
+                            <td>Hermiston 3</td>
+                            <td>58</td>
+                            <td>3.0</td>
+                            <td>50</td>
+                            <td>24</td>
+                            <td>20</td>
+                            <td>32</td>
+                            <td>32</td>
+                            <td>40</td>
+                          </tr>
+                          <tr>
+                            <td>Executive Boardroom</td>
+                            <td>24</td>
+                            <td>2.8</td>
+                            <td>_</td>
+                            <td>_</td>
+                            <td>10</td>
+                            <td>_</td>
+                            <td>_</td>
+                            <td>10</td>
+                          </tr>
+                          <tr>
+                            <td>Turnhouse</td>
+                            <td>48</td>
+                            <td>2.8</td>
+                            <td>36</td>
+                            <td>16</td>
+                            <td>16</td>
+                            <td>20</td>
+                            <td>_</td>
+                            <td>16</td>
+                          </tr>
+                          <tr>
+                            <td>Maybury</td>
+                            <td>24</td>
+                            <td>2.8</td>
+                            <td>20</td>
+                            <td>_</td>
+                            <td>12</td>
+                            <td>12</td>
+                            <td>_</td>
+                            <td>10</td>
+                          </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+                </div>
+            </section>
+            </section>
+
+        <!-- Section-8 -->
+        <section>
+            <section class="Image-container">
+                <div class="Image-url">
+                    <!-- Inline image url with external Style -->
+                    <img src="Assets/OurSpaces.jpg" alt="OUR SPACES"> 
+                </div>
+                <div class="Image-text">
+                    <P>OUR SPACES</P>
+                </div>
+            </section>  
+    
+            <!-- Content -->
+            <section class="Text-container" id="OUR-SPACES">
+                <!-- Dine-Box -->
+                <div class="Dine">
+                    <p><strong></strong>Dine</strong> - £30.00 per person</p>
+                </div>
+    
+                <!-- Normal Content -->
+                <div class="Normal-text">
+                    <p>
+                        Meet. Train. Play. At Novotel Edinburgh Park, the ultimate 4-star venue for all your 
+                        <br>meeting and event needs. <br> 
+                        Our well-equipped event spaces can accommodate parties of up to 180 guests. <br>
+                        Facilities include experienced event staff, high speed WiFi access, fully air- <br> 
+                        conditioned rooms and high quality audio visual equipment. <br> 
+                        Located next to Edinburgh Park train station and directly off the M8, Novotel <br> 
+                        Edinburgh Park benefits from exceptional access. Edinburgh Airport and City Centre <br> 
+                        can be accessed via regular buses or trams.
+                        <hr>
+                    </p>
+                    <br />
+                    <p>Enter a world of possibilities.</p>
+                </div>
+    
+                <!-- Table -->
+                <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Area</th>
+                            <th>Height</th>
+                            <th>Theatre</th>
+                            <th>U-shape</th>
+                            <th>Boardroom</th>
+                            <th>Classroom</th>
+                            <th>Cabaret</th>
+                            <th>Banquet</th>           
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Hermiston Suite</td>
+                            <td>174</td>
+                            <td>3.0</td>
+                            <td>180</td>
+                            <td>64</td>
+                            <td>60</td>
+                            <td>90</td>
+                            <td>120</td>
+                            <td>150</td>
+                        </tr>
+                        <tr>
+                            <td>Hermiston 1&2</td>
+                            <td>116</td>
+                            <td>3.0</td>
+                            <td>100</td>
+                            <td>44</td>
+                            <td>40</td>
+                            <td>60</td>
+                            <td>64</td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td>Hermiston 1</td>
+                            <td>58</td>
+                            <td>3.0</td>
+                            <td>50</td>
+                            <td>24</td>
+                            <td>20</td>
+                            <td>32</td>
+                            <td>32</td>
+                            <td>40</td>
+                          </tr>
+                          <tr>
+                            <td>Hermiston 2</td>
+                            <td>58</td>
+                            <td>3.0</td>
+                            <td>50</td>
+                            <td>24</td>
+                            <td>20</td>
+                            <td>32</td>
+                            <td>32</td>
+                            <td>40</td>
+                          </tr>
+                          <tr>
+                            <td>Hermiston 3</td>
+                            <td>58</td>
+                            <td>3.0</td>
+                            <td>50</td>
+                            <td>24</td>
+                            <td>20</td>
+                            <td>32</td>
+                            <td>32</td>
+                            <td>40</td>
+                          </tr>
+                          <tr>
+                            <td>Executive Boardroom</td>
+                            <td>24</td>
+                            <td>2.8</td>
+                            <td>_</td>
+                            <td>_</td>
+                            <td>10</td>
+                            <td>_</td>
+                            <td>_</td>
+                            <td>10</td>
+                          </tr>
+                          <tr>
+                            <td>Turnhouse</td>
+                            <td>48</td>
+                            <td>2.8</td>
+                            <td>36</td>
+                            <td>16</td>
+                            <td>16</td>
+                            <td>20</td>
+                            <td>_</td>
+                            <td>16</td>
+                          </tr>
+                          <tr>
+                            <td>Maybury</td>
+                            <td>24</td>
+                            <td>2.8</td>
+                            <td>20</td>
+                            <td>_</td>
+                            <td>12</td>
+                            <td>12</td>
+                            <td>_</td>
+                            <td>10</td>
+                          </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+                </div>
+            </section>
+            </section>
+
+        <!-- Section-9 -->
+        <section>
+            <section class="Image-container">
+                <div class="Image-url">
+                    <!-- Inline image url with external Style -->
+                    <img src="Assets/OurSpaces.jpg" alt="OUR SPACES"> 
+                </div>
+                <div class="Image-text">
+                    <P>OUR SPACES</P>
+                </div>
+            </section>  
+    
+            <!-- Content -->
+            <section class="Text-container" id="OUR-SPACES">
+                <!-- Dine-Box -->
+                <div class="Dine">
+                    <p><strong></strong>Dine</strong> - £30.00 per person</p>
+                </div>
+    
+                <!-- Normal Content -->
+                <div class="Normal-text">
+                    <p>
+                        Meet. Train. Play. At Novotel Edinburgh Park, the ultimate 4-star venue for all your 
+                        <br>meeting and event needs. <br> 
+                        Our well-equipped event spaces can accommodate parties of up to 180 guests. <br>
+                        Facilities include experienced event staff, high speed WiFi access, fully air- <br> 
+                        conditioned rooms and high quality audio visual equipment. <br> 
+                        Located next to Edinburgh Park train station and directly off the M8, Novotel <br> 
+                        Edinburgh Park benefits from exceptional access. Edinburgh Airport and City Centre <br> 
+                        can be accessed via regular buses or trams.
+                        <hr>
+                    </p>
+                    <br />
+                    <p>Enter a world of possibilities.</p>
+                </div>
+    
+                <!-- Table -->
+                <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Area</th>
+                            <th>Height</th>
+                            <th>Theatre</th>
+                            <th>U-shape</th>
+                            <th>Boardroom</th>
+                            <th>Classroom</th>
+                            <th>Cabaret</th>
+                            <th>Banquet</th>           
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Hermiston Suite</td>
+                            <td>174</td>
+                            <td>3.0</td>
+                            <td>180</td>
+                            <td>64</td>
+                            <td>60</td>
+                            <td>90</td>
+                            <td>120</td>
+                            <td>150</td>
+                        </tr>
+                        <tr>
+                            <td>Hermiston 1&2</td>
+                            <td>116</td>
+                            <td>3.0</td>
+                            <td>100</td>
+                            <td>44</td>
+                            <td>40</td>
+                            <td>60</td>
+                            <td>64</td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td>Hermiston 1</td>
+                            <td>58</td>
+                            <td>3.0</td>
+                            <td>50</td>
+                            <td>24</td>
+                            <td>20</td>
+                            <td>32</td>
+                            <td>32</td>
+                            <td>40</td>
+                          </tr>
+                          <tr>
+                            <td>Hermiston 2</td>
+                            <td>58</td>
+                            <td>3.0</td>
+                            <td>50</td>
+                            <td>24</td>
+                            <td>20</td>
+                            <td>32</td>
+                            <td>32</td>
+                            <td>40</td>
+                          </tr>
+                          <tr>
+                            <td>Hermiston 3</td>
+                            <td>58</td>
+                            <td>3.0</td>
+                            <td>50</td>
+                            <td>24</td>
+                            <td>20</td>
+                            <td>32</td>
+                            <td>32</td>
+                            <td>40</td>
+                          </tr>
+                          <tr>
+                            <td>Executive Boardroom</td>
+                            <td>24</td>
+                            <td>2.8</td>
+                            <td>_</td>
+                            <td>_</td>
+                            <td>10</td>
+                            <td>_</td>
+                            <td>_</td>
+                            <td>10</td>
+                          </tr>
+                          <tr>
+                            <td>Turnhouse</td>
+                            <td>48</td>
+                            <td>2.8</td>
+                            <td>36</td>
+                            <td>16</td>
+                            <td>16</td>
+                            <td>20</td>
+                            <td>_</td>
+                            <td>16</td>
+                          </tr>
+                          <tr>
+                            <td>Maybury</td>
+                            <td>24</td>
+                            <td>2.8</td>
+                            <td>20</td>
+                            <td>_</td>
+                            <td>12</td>
+                            <td>12</td>
+                            <td>_</td>
+                            <td>10</td>
+                          </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+                </div>
+            </section>
+            </section>
+
+        <!-- Section-10 -->
+        <section>
+            <section class="Image-container">
+                <div class="Image-url">
+                    <!-- Inline image url with external Style -->
+                    <img src="Assets/OurSpaces.jpg" alt="OUR SPACES"> 
+                </div>
+                <div class="Image-text">
+                    <P>OUR SPACES</P>
+                </div>
+            </section>  
+    
+            <!-- Content -->
+            <section class="Text-container" id="OUR-SPACES">
+                <!-- Dine-Box -->
+                <div class="Dine">
+                    <p><strong></strong>Dine</strong> - £30.00 per person</p>
+                </div>
+    
+                <!-- Normal Content -->
+                <div class="Normal-text">
+                    <p>
+                        Meet. Train. Play. At Novotel Edinburgh Park, the ultimate 4-star venue for all your 
+                        <br>meeting and event needs. <br> 
+                        Our well-equipped event spaces can accommodate parties of up to 180 guests. <br>
+                        Facilities include experienced event staff, high speed WiFi access, fully air- <br> 
+                        conditioned rooms and high quality audio visual equipment. <br> 
+                        Located next to Edinburgh Park train station and directly off the M8, Novotel <br> 
+                        Edinburgh Park benefits from exceptional access. Edinburgh Airport and City Centre <br> 
+                        can be accessed via regular buses or trams.
+                        <hr>
+                    </p>
+                    <br />
+                    <p>Enter a world of possibilities.</p>
+                </div>
+    
+                <!-- Table -->
+                <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Area</th>
+                            <th>Height</th>
+                            <th>Theatre</th>
+                            <th>U-shape</th>
+                            <th>Boardroom</th>
+                            <th>Classroom</th>
+                            <th>Cabaret</th>
+                            <th>Banquet</th>           
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Hermiston Suite</td>
+                            <td>174</td>
+                            <td>3.0</td>
+                            <td>180</td>
+                            <td>64</td>
+                            <td>60</td>
+                            <td>90</td>
+                            <td>120</td>
+                            <td>150</td>
+                        </tr>
+                        <tr>
+                            <td>Hermiston 1&2</td>
+                            <td>116</td>
+                            <td>3.0</td>
+                            <td>100</td>
+                            <td>44</td>
+                            <td>40</td>
+                            <td>60</td>
+                            <td>64</td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td>Hermiston 1</td>
+                            <td>58</td>
+                            <td>3.0</td>
+                            <td>50</td>
+                            <td>24</td>
+                            <td>20</td>
+                            <td>32</td>
+                            <td>32</td>
+                            <td>40</td>
+                          </tr>
+                          <tr>
+                            <td>Hermiston 2</td>
+                            <td>58</td>
+                            <td>3.0</td>
+                            <td>50</td>
+                            <td>24</td>
+                            <td>20</td>
+                            <td>32</td>
+                            <td>32</td>
+                            <td>40</td>
+                          </tr>
+                          <tr>
+                            <td>Hermiston 3</td>
+                            <td>58</td>
+                            <td>3.0</td>
+                            <td>50</td>
+                            <td>24</td>
+                            <td>20</td>
+                            <td>32</td>
+                            <td>32</td>
+                            <td>40</td>
+                          </tr>
+                          <tr>
+                            <td>Executive Boardroom</td>
+                            <td>24</td>
+                            <td>2.8</td>
+                            <td>_</td>
+                            <td>_</td>
+                            <td>10</td>
+                            <td>_</td>
+                            <td>_</td>
+                            <td>10</td>
+                          </tr>
+                          <tr>
+                            <td>Turnhouse</td>
+                            <td>48</td>
+                            <td>2.8</td>
+                            <td>36</td>
+                            <td>16</td>
+                            <td>16</td>
+                            <td>20</td>
+                            <td>_</td>
+                            <td>16</td>
+                          </tr>
+                          <tr>
+                            <td>Maybury</td>
+                            <td>24</td>
+                            <td>2.8</td>
+                            <td>20</td>
+                            <td>_</td>
+                            <td>12</td>
+                            <td>12</td>
+                            <td>_</td>
+                            <td>10</td>
+                          </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+                </div>
+            </section>
+            </section>
+
+    </section> 
+    <!-- Main Section Ends -->
+
+    <!-- Sticky Footer -->
+    <div class="footer">
+        <button id="shareButton">Share</button>
+        <a href="#" target="_blank">
+            <button class="get-in-touch">Get in Touch</button>
+        </a>
+    </div>
+
+    <script>
+        const shareData = {
+            url: "https://bryantnorman.github.io/Novotel-Sample-3/",
+        };
+        const btn = document.getElementById("shareButton");
+        btn.addEventListener("click", async () => {
+            try {
+                await navigator.share(shareData);
+            }
+            catch (err) {
+                console.error('Error sharing:', err);
+            }
+        });
+
+        function scrollToSection(id) {
+            var element = document.getElementById(id);
+            var menuBarHeight = document.querySelector('.Header').offsetHeight;
+            var scrollPosition = element.offsetTop - menuBarHeight;
+            window.scrollTo({ top: scrollPosition, behavior: 'smooth' });
+    }
+    </script>
+  </body>
+</html>
