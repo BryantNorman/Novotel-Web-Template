@@ -78,6 +78,8 @@
             font-weight: bold;
             text-align: center;
             z-index: 1;
+            border: solid black 2px;
+            background: gray;
         }
         /* Section-Image Styles Ends */
 
@@ -225,6 +227,9 @@
         /* Text Styles  */
         .menu-heading, .food-name{
             font-size: 16px;
+        }
+        .food-name{
+          margin-top: 5px;
         }
         .food-description{
             font-size: 12px;
@@ -977,6 +982,7 @@
                     <br>
                     <hr>
                     <p class="food-name"><em>Add a mini dessert (+£1.50 pp) </em><br>
+                      <br>
                       Chocolate brownie <br>
                       Victoria sponge <br>
                       Caramel shortcake <br>
@@ -1122,7 +1128,7 @@
                 <!-- Normal Content -->
                 <div class="Normal-text">
                     <hr>
-                    <p class="food-name"> Full Day Rate | from £45 per person</p>
+                    <p class="food-name"> Full Day Rate | from £45 per person</p><br>
                       <p class="food-description">This package includes:- <br>
                         Room hire <br>
                         Bottled water throughout the day <br>
@@ -1132,7 +1138,7 @@
                         </p>   
                     <hr>
                     <br />
-                    <p class="food-name"> Half Day Rate | from £39 per person</p>
+                    <p class="food-name"> Half Day Rate | from £39 per person</p><br>
                       <p class="food-description">This package includes:- <br>
                         Room hire <br>
                         Bottled water throughout the day <br>
@@ -1580,7 +1586,7 @@
                         Selection of finger sandwiches with assorted fillings <br> Warm sausage rolls. <br>
                         Freshly brewed tea & coffee <br>
                         Selection of biscuits <br>
-                        Add on home-made soup for an additional £1.50pp       
+                        <em>Add on home-made soup for an additional £1.50pp     </em>  
                         </p>   
                         <br>
                       <p class="food-name"><strong>Option 2 </strong>- A hearty choice £21.95 per person</p>
@@ -1714,7 +1720,7 @@
             <section class="Image-container">
                 <div class="Image-url">
                     <!-- Inline image url with external Style -->
-                    <img src="Assets/OurSpaces.jpg" alt="CONTACT US"> 
+                    <img src="Assets/Conatct-Us.jpg" alt="CONTACT US"> 
                 </div>
                 <div class="Image-text">
                     <P>CONTACT US</P>
@@ -1730,13 +1736,14 @@
     
                 <!-- Normal Content -->
                 <div class="Normal-text">
-                    <img src="Assets/" alt="qr" style="height: 20%; width: 20%;">
+                  <a href="">
+                    <img src="Assets/" alt="qr" style="height: 20%; width: 20%;"></a>
                     <br><br><br>
                     <p class="menu-heading"> <strong>Bespoke packages available <br>
                       For more information or to discuss:</strong></p>
                     <br>
                       <p class="food-name">Tel: +44 (0)131 446 5643 <br>
-                        Email: h6515-sb@accor.com <br>
+                        Email: h6515-sb@accor.com <br><br>
                         15 Lochside Avenue, Hermiston Gait Retail Park, <br> 
                         Edinburgh EH12 9DJ Sat nav: use EH11 4DG       
                         </p>   
@@ -1873,7 +1880,7 @@
 
     <script>
         const shareData = {
-            url: "https://bryantnorman.github.io/Novotel-Sample-3/",
+            url: "https://bryantnorman.github.io/Novotel-Web-Template/",
         };
         const btn = document.getElementById("shareButton");
         btn.addEventListener("click", async () => {
