@@ -88,6 +88,9 @@
             text-align: center;
         }
 
+        .Normal-text{
+            padding-top: 10%;
+        }
         .Normal-text p {
             color: #fff;
         }
@@ -170,10 +173,13 @@
         /* Additional Elements Styles */
         hr{
             margin: 16px auto;
-            width: 50%;
+            width: 40%;
         }
 
         /* Dine-Box Styles */
+        .Dine{
+            padding-top: 5%;
+        }
         .Dine p{
             border: 2px solid white;
             /* border-top: none; */
@@ -184,10 +190,46 @@
             margin: 0 auto;
             margin-bottom: 16px;
             white-space: nowrap;
-            width: 220px;
+            width: 260px;
         }
         /* Dine-Box Styles Ends */
 
+        /* Column Styles */
+        @media screen and (max-width: 768px) {
+            .column {
+              display: flex;
+              flex-direction: column;
+            }
+        
+            .column-1,
+            .column-2 {
+              width: 100%;
+            }
+        }
+
+        @media screen and (min-width: 769px) {
+          .column {
+            display: flex;
+          }
+
+          .column-1,
+          .column-2 {
+            width: 50%;
+          }
+          li{
+            text-align: left;
+            }
+        }
+        /* Column Styles Ends */
+
+        /* Text Styles  */
+        .menu-heading, .food-name{
+            font-size: 16px;
+        }
+        .food-description{
+            font-size: 12px;
+        }
+        /* Text Styles Ends  */
         /* Additional Elements Styles Ends */
   </style>
   <body>
@@ -223,9 +265,9 @@
         <!-- Content -->
         <section class="Text-container" id="OUR-SPACES">
             <!-- Dine-Box -->
-            <div class="Dine">
+            <!-- <div class="Dine">
                 <p><strong></strong>Dine</strong> - £30.00 per person</p>
-            </div>
+            </div> -->
 
             <!-- Normal Content -->
             <div class="Normal-text">
@@ -361,7 +403,7 @@
             <section class="Image-container">
                 <div class="Image-url">
                     <!-- Inline image url with external Style -->
-                    <img src="Assets/OurSpaces.jpg" alt="SET MENU 1"> 
+                    <img src="Assets/SET MENU 1.jpeg" alt="SET MENU 1"> 
                 </div>
                 <div class="Image-text">
                     <P>SET MENU 1</P>
@@ -377,23 +419,37 @@
     
                 <!-- Normal Content -->
                 <div class="Normal-text">
-                    <p>
-                        Meet. Train. Play. At Novotel Edinburgh Park, the ultimate 4-star venue for all your 
-                        <br>meeting and event needs. <br> 
-                        Our well-equipped event spaces can accommodate parties of up to 180 guests. <br>
-                        Facilities include experienced event staff, high speed WiFi access, fully air- <br> 
-                        conditioned rooms and high quality audio visual equipment. <br> 
-                        Located next to Edinburgh Park train station and directly off the M8, Novotel <br> 
-                        Edinburgh Park benefits from exceptional access. Edinburgh Airport and City Centre <br> 
-                        can be accessed via regular buses or trams.
-                        <hr>
-                    </p>
+                    <p class="menu-heading"><strong>TO START</strong></p>
+                    <br>
+                    <p class="food-name" style="margin-bottom: 0px; margin-top: 5px;"> Roasted tomato soup </p>
+                    <p class="food-description" style="margin-top: 0px;">served with warm bread & butter</p> 
+                    <p class="food-name" style="margin-bottom: 0px; margin-top: 5px;"> Thai noodles salad  </p>
+                    <p class="food-description" style="margin-top: 0px;">Asian style slaw, sweet chilli sauce & sesame seeds</p>  
+                    <p class="food-name" style="margin-bottom: 0px; margin-top: 5px;"> Haggis bon bons </p>
+                    <p class="food-description" style="margin-top: 0px;">Arran mustard & whisky</p> 
                     <br />
-                    <p>Enter a world of possibilities.</p>
+                    <p class="menu-heading"><strong>TO FOLLOW</strong></p>
+                    <br>
+                    <p class="food-name" style="margin-bottom: 0px;">Chicken katsu curry</p>
+                    <p class="food-description" style="margin-top: 0px;">Jasmine rice & pickled vegetables</p>
+                    <p class="food-name" style="margin-bottom: 0px;">Sea bass fillet </p>
+                    <p class="food-description"style="margin-top: 0px;">Sautéed potatoes, samphire & cherry tomatoes</p>
+                    <p class="food-name" style="margin-bottom: 0px;">Spinach & ricotta ravioli</p>
+                    <p class="food-description"style="margin-top: 0px;">Chive cream sauce, sundried tomatoes & balsato</p>
+                    <br />
+                    <p class="menu-heading"><strong>TO FINISH</strong></p> <br>
+                    <p class="food-name" style="margin-bottom: 0px;">Vanilla cheesecake</p>
+                    <p class="food-name"style="margin-top: 0px;">Red berry compote </p>
+                    <p class="food-name" style="margin-bottom: 0px;">Chocolate mousse </p>
+                    <p class="food-name"style="margin-top: 0px;">Vanilla Chantilly & honeycomb </p>
+                    <p class="food-name" style="margin-bottom: 0px;">Lemon posset </p>
+                    <p class="food-name"style="margin-top: 0px;">Basil & raspberries</p>
+                    <br>
+                    <p class="note" style="font-size: 12px;">*Dietary requirements catered for on request</p>
                 </div>
     
                 <!-- Table -->
-                <div class="table-container">
+                <!-- <div class="table-container">
                 <table>
                     <thead>
                         <tr>
@@ -497,10 +553,9 @@
                             <td>_</td>
                             <td>10</td>
                           </tr>
-                        <!-- Add more rows as needed -->
                     </tbody>
                 </table>
-                </div>
+                </div> -->
             </section>
             </section>
 
@@ -509,7 +564,7 @@
             <section class="Image-container">
                 <div class="Image-url">
                     <!-- Inline image url with external Style -->
-                    <img src="Assets/OurSpaces.jpg" alt="SET MENU 2"> 
+                    <img src="Assets/Set-Menu-2.png" alt="SET MENU 2"> 
                 </div>
                 <div class="Image-text">
                     <P>SET MENU 2</P>
@@ -520,28 +575,43 @@
             <section class="Text-container" id="SET MENU 2">
                 <!-- Dine-Box -->
                 <div class="Dine">
-                    <p><strong></strong>Dine</strong> - £30.00 per person</p>
+                    <p><strong></strong>INCLUDE</strong> - £35.00 per person</p>
                 </div>
     
                 <!-- Normal Content -->
                 <div class="Normal-text">
-                    <p>
-                        Meet. Train. Play. At Novotel Edinburgh Park, the ultimate 4-star venue for all your 
-                        <br>meeting and event needs. <br> 
-                        Our well-equipped event spaces can accommodate parties of up to 180 guests. <br>
-                        Facilities include experienced event staff, high speed WiFi access, fully air- <br> 
-                        conditioned rooms and high quality audio visual equipment. <br> 
-                        Located next to Edinburgh Park train station and directly off the M8, Novotel <br> 
-                        Edinburgh Park benefits from exceptional access. Edinburgh Airport and City Centre <br> 
-                        can be accessed via regular buses or trams.
-                        <hr>
-                    </p>
+                    <p class="menu-heading"><strong>TO START</strong></p>
+                    <br>
+                    <p class="food-name" style="margin-bottom: 0px;"> Prawn & crayfish cocktail </p>
+                    <p class="food-description" style="margin-top: 0px;">Bloody Mary sauce</p> 
+                    <p class="food-name" style="margin-bottom: 0px;"> Prosciutto & poached pear salad </p>
+                    <p class="food-description" style="margin-top: 0px;">Blue cheese crumb & house dressing</p>  
+                    <p class="food-name" style="margin-bottom: 0px;"> Creamy cauliflower & parmesan soup </p>
+                    <p class="food-description" style="margin-top: 0px;">served with warm bread & butter</p>     
+                    <br />        
+                    <p class="menu-heading"><strong>TO FOLLOW</strong></p>
+                    <br>
+                    <p class="food-name" style="margin-bottom: 0px;">Roasted chicken supreme</p>
+                    <p class="food-description" style="margin-top: 0px;">Peas al a Françoise, sautéed potatoes & jus</p>
+                    <p class="food-name" style="margin-bottom: 0px;">Wild mushroom risotto</p>
+                    <p class="food-description" style="margin-top: 0px;">Truffle crème fraiche & parmesan crisp</p>
+                    <p class="food-name" style="margin-bottom: 0px;">Seared salmon fillet</p>
+                    <p class="food-description" style="margin-top: 0px;">Buttered potatoes, green beans & shallots, hollandaise sauce</p>
                     <br />
-                    <p>Enter a world of possibilities.</p>
+                    <p><strong>TO FINISH</strong></p>
+                    <br>
+                    <p class="food-name" style="margin-bottom: 0px;">Sticky toffee pudding</p>
+                    <p class="food-description" style="margin-top: 0px;">Vanilla ice cream</p>
+                    <p class="food-name" style="margin-bottom: 0px;">Scottish cheeseboard</p>
+                    <p class="food-description" style="margin-top: 0px;">Chutney & crackers</p>
+                    <p class="food-name" style="margin-bottom: 0px;">Chocolate & salted caramel torte</p>
+                    <p class="food-description" style="margin-top: 0px;">Chantilly cream</p>
+                    <br>
+                    <p class="note" style="font-size: 12px;">*Dietary requirements catered for on request</p>
                 </div>
     
                 <!-- Table -->
-                <div class="table-container">
+                <!-- <div class="table-container">
                 <table>
                     <thead>
                         <tr>
@@ -645,10 +715,9 @@
                             <td>_</td>
                             <td>10</td>
                           </tr>
-                        <!-- Add more rows as needed -->
                     </tbody>
                 </table>
-                </div>
+                </div> -->
             </section>
             </section>
 
@@ -657,7 +726,7 @@
             <section class="Image-container">
                 <div class="Image-url">
                     <!-- Inline image url with external Style -->
-                    <img src="Assets/OurSpaces.jpg" alt="FORK BUFFET"> 
+                    <img src="Assets/Fork-Buffet.jpg" alt="FORK BUFFET"> 
                 </div>
                 <div class="Image-text">
                     <P>FORK BUFFET</P>
@@ -667,29 +736,80 @@
             <!-- Content -->
             <section class="Text-container" id="FORK BUFFET">
                 <!-- Dine-Box -->
-                <div class="Dine">
+                <!-- <div class="Dine">
                     <p><strong></strong>Dine</strong> - £30.00 per person</p>
-                </div>
+                </div> -->
     
                 <!-- Normal Content -->
                 <div class="Normal-text">
-                    <p>
-                        Meet. Train. Play. At Novotel Edinburgh Park, the ultimate 4-star venue for all your 
-                        <br>meeting and event needs. <br> 
-                        Our well-equipped event spaces can accommodate parties of up to 180 guests. <br>
-                        Facilities include experienced event staff, high speed WiFi access, fully air- <br> 
-                        conditioned rooms and high quality audio visual equipment. <br> 
-                        Located next to Edinburgh Park train station and directly off the M8, Novotel <br> 
-                        Edinburgh Park benefits from exceptional access. Edinburgh Airport and City Centre <br> 
-                        can be accessed via regular buses or trams.
-                        <hr>
-                    </p>
-                    <br />
-                    <p>Enter a world of possibilities.</p>
+                    <p class="food-name"><STRONG>Option 1</STRONG>- £33pp (2 mains, 2 sides, 1 dessert)</p>
+                    <p class="food-name"><STRONG>Option 2</STRONG>- £38pp (1 starter, 2 mains, 2 sides, 1 dessert)</p>
+                    <p class="food-name"><STRONG>Option 3</STRONG>- £45pp (3 starters, 3 mains, 3 sides, 2 desserts)</p>
                 </div>
-    
+                <br>
+                <hr>
+                <br>
+                <div class="column">
+                    <div class="column-1">
+                      <p class="menu-heading"><strong>STARTERS</strong></p> <br>
+                      <ul>
+                        <li class="food-name"> Prawn & Crayfish cocktail, bloody mary sauce </li>
+                        <li class="food-name"> Thai noodle salad, asian slaw, sweet chilli dressing </li>
+                        <li class="food-name"> Creamy cauliflower & parmesan soup </li>
+                        <li class="food-name"> Creamy cauliflower & parmesan soup </li>
+                        <li class="food-name"> Creamy cauliflower & parmesan soup </li>
+                      </ul>
+                    </div>
+                    <br>
+                    <div class="column-2">
+                      <p class="menu-heading"><strong>Mains</strong></p> <br>
+                      <ul>
+                        <li class="food-name"> Spinach & ricotta tortellini, chive cream sauce </li>
+                        <li class="food-name"> Chicken katsu curry, jasmine rice </li>
+                        <li class="food-name"> Wild mushroom risotto, truffle crème fraiche </li>
+                        <li class="food-name"> Mac & Cheese </li>
+                        <li class="food-name"> Roast chicken breast, peas & pancetta, red wine jus </li>
+                        <li class="food-name"> Sea bass fillet, sautéed potatoes, samphire, chilli & garlic </li>
+                        <li class="food-name"> Roast beef, Yorkshire pudding, mashed potatoes & red wine jus </li>
+                        <li class="food-name"> Fish & chips, mushy peas </li>
+                        <li class="food-name"> Cajun Salmon fillet, Ndjua & vegetable rice </li>
+                        <li class="food-name"> Butternut squash & lentil dhal, basmati rice </li>
+                      </ul>
+                    </div>
+                    </div>
+                    <br />
+                    <br>
+                    <br>
+
+                    <div class="column">
+                      <div class="column-1">
+                        <p class="menu-heading"><strong>ADDITIONAL SIDES</strong></p> <br>
+                        <ul>
+                          <li class="food-name"> French fries </li>
+                          <li class="food-name"> Chunky chips </li>
+                          <li class="food-name"> Seasonal vegetables </li>
+                          <li class="food-name"> Grilled Flatbreads </li>
+                          <li class="food-name"> Breadbasket </li>
+                          <li class="food-name"> Garlic bread </li>
+                        </ul>
+                      </div>
+                      <br>
+                      <div class="column-2">
+                        <p class="menu-heading"><strong>DESSERTS</strong></p> <br>
+                        <ul>
+                          <li class="food-name"> Milk Chocolate mousse, Chantilly cream & honeycomb pieces </li>
+                          <li class="food-name"> Fruit crumble & custard (apple/peach/berry) </li>
+                          <li class="food-name"> Fresh fruit salad </li>
+                          <li class="food-name"> Vanilla Crème brûlée, shortbread biscuits </li>
+                          <li class="food-name"> Eton mess, fresh berries & meringue </li>
+                        </ul>
+                      </div>
+                      </div>
+                      <br>
+                    <p class="note" style="font-size: 12px;">*Dietary requirements catered for on request</p>
+                
                 <!-- Table -->
-                <div class="table-container">
+                <!-- <div class="table-container">
                 <table>
                     <thead>
                         <tr>
@@ -793,19 +913,18 @@
                             <td>_</td>
                             <td>10</td>
                           </tr>
-                        <!-- Add more rows as needed -->
                     </tbody>
                 </table>
-                </div>
+                </div> -->
             </section>
             </section>
         
-            <!-- Section-5 -->
+        <!-- Section-5 -->
         <section>
             <section class="Image-container">
                 <div class="Image-url">
                     <!-- Inline image url with external Style -->
-                    <img src="Assets/OurSpaces.jpg" alt="FINGER BUFFET"> 
+                    <img src="Assets/Finger-Buffet.png" alt="FINGER BUFFET"> 
                 </div>
                 <div class="Image-text">
                     <P>FINGER BUFFET</P>
@@ -816,28 +935,62 @@
             <section class="Text-container" id="FINGER BUFFET">
                 <!-- Dine-Box -->
                 <div class="Dine">
-                    <p><strong></strong>Dine</strong> - £30.00 per person</p>
+                    <p><strong></strong></strong>£19.95 per person</p>
                 </div>
     
                 <!-- Normal Content -->
                 <div class="Normal-text">
-                    <p>
-                        Meet. Train. Play. At Novotel Edinburgh Park, the ultimate 4-star venue for all your 
-                        <br>meeting and event needs. <br> 
-                        Our well-equipped event spaces can accommodate parties of up to 180 guests. <br>
-                        Facilities include experienced event staff, high speed WiFi access, fully air- <br> 
-                        conditioned rooms and high quality audio visual equipment. <br> 
-                        Located next to Edinburgh Park train station and directly off the M8, Novotel <br> 
-                        Edinburgh Park benefits from exceptional access. Edinburgh Airport and City Centre <br> 
-                        can be accessed via regular buses or trams.
-                        <hr>
+                    <p>6 hot items or 2 hot items with sandwich selection 
+                        <br>Additional items £3.50 each</p>
+                    <hr>
+                    <br>
+                    <div class="column">
+                    <div class="column-1">
+                      <!-- <p class="menu-heading"><strong>STARTERS</strong></p> -->
+                      <p class="food-name">Filo wrapped prawns <br>
+                        Salt & pepper squid <br>
+                        Cod Goujons<br>
+                        King prawn & vegetable skewers<br> 
+                        Sausage rolls<br>
+                        Honey & mustard chipolatas<br> 
+                        Haggis bon bons<br>
+                        Chicken tikka or satay skewers<br> 
+                        Lamb koftas<br>
+                        Mini beef burgers<br>
+                        Mini chicken burgers<br></p>
+                    </div>
+                    <div class="column-2">
+                      <!-- <p class="menu-heading"><strong>STARTERS</strong></p> -->
+                      <p class="food-name">Margherita pizzabr <br>
+                        Chicken goujonsbr <br>
+                        Cheese & onion rollsbr <br> 
+                        Mozzarella sticksbr <br>
+                        Onion ringsbr <br>
+                        Vegetable spring rollsbr <br>
+                        Mini vegetable quichesbr <br> 
+                        Halloumi & vegetable skewersbr <br> 
+                        Cajun potato wedgesbr <br> 
+                        French friesbr <br>
+                        Falafel bitesbr <br></p>
+                    </div>
+                    </div>
+                    <br>
+                    <hr>
+                    <p class="food-name"><em>Add a mini dessert (+£1.50 pp) </em><br>
+                      Chocolate brownie <br>
+                      Victoria sponge <br>
+                      Caramel shortcake <br>
+                      Tiffin <br>
+                      Mini cheesecakes <br>
+                      Scottish tablet & Macaroon <br>
+                      Chefs selection <br>
                     </p>
                     <br />
-                    <p>Enter a world of possibilities.</p>
+                    <p class="note" style="font-size: 12px;">*Dietary requirements catered for on request</p>
                 </div>
     
                 <!-- Table -->
-                <div class="table-container">
+                <!-- <div class="table-container">
                 <table>
                     <thead>
                         <tr>
@@ -941,10 +1094,9 @@
                             <td>_</td>
                             <td>10</td>
                           </tr>
-                        <!-- Add more rows as needed -->
                     </tbody>
                 </table>
-                </div>
+                </div> -->
             </section>
             </section>
 
@@ -953,7 +1105,7 @@
             <section class="Image-container">
                 <div class="Image-url">
                     <!-- Inline image url with external Style -->
-                    <img src="Assets/OurSpaces.jpg" alt="DAY DELEGATE PACKAGES"> 
+                    <img src="Assets/Day-Delegate-Package.png" alt="DAY DELEGATE PACKAGES"> 
                 </div>
                 <div class="Image-text">
                     <P>DAY DELEGATE PACKAGES</P>
@@ -963,29 +1115,38 @@
             <!-- Content -->
             <section class="Text-container" id="DAY DELEGATE PACKAGES">
                 <!-- Dine-Box -->
-                <div class="Dine">
+                <!-- <div class="Dine">
                     <p><strong></strong>Dine</strong> - £30.00 per person</p>
-                </div>
+                </div> -->
     
                 <!-- Normal Content -->
                 <div class="Normal-text">
-                    <p>
-                        Meet. Train. Play. At Novotel Edinburgh Park, the ultimate 4-star venue for all your 
-                        <br>meeting and event needs. <br> 
-                        Our well-equipped event spaces can accommodate parties of up to 180 guests. <br>
-                        Facilities include experienced event staff, high speed WiFi access, fully air- <br> 
-                        conditioned rooms and high quality audio visual equipment. <br> 
-                        Located next to Edinburgh Park train station and directly off the M8, Novotel <br> 
-                        Edinburgh Park benefits from exceptional access. Edinburgh Airport and City Centre <br> 
-                        can be accessed via regular buses or trams.
-                        <hr>
-                    </p>
+                    <hr>
+                    <p class="food-name"> Full Day Rate | from £45 per person</p>
+                      <p class="food-description">This package includes:- <br>
+                        Room hire <br>
+                        Bottled water throughout the day <br>
+                        Novotel stationary <br>
+                        Hot & cold buffet lunch <br>
+                        Three servings of tea & coffee <br>
+                        </p>   
+                    <hr>
                     <br />
-                    <p>Enter a world of possibilities.</p>
+                    <p class="food-name"> Half Day Rate | from £39 per person</p>
+                      <p class="food-description">This package includes:- <br>
+                        Room hire <br>
+                        Bottled water throughout the day <br>
+                        Novotel stationary <br>
+                        Hot & cold buffet lunch <br>
+                        Two servings of tea & coffee <br>
+                      </p>
+                    <hr>
+                    <br />
+                    <p class="note" style="font-size: 12px;">*Dietary requirements catered for on request</p>
                 </div>
     
                 <!-- Table -->
-                <div class="table-container">
+                <!-- <div class="table-container">
                 <table>
                     <thead>
                         <tr>
@@ -1089,10 +1250,9 @@
                             <td>_</td>
                             <td>10</td>
                           </tr>
-                        <!-- Add more rows as needed -->
                     </tbody>
                 </table>
-                </div>
+                </div> -->
             </section>
             </section>
 
@@ -1101,7 +1261,7 @@
             <section class="Image-container">
                 <div class="Image-url">
                     <!-- Inline image url with external Style -->
-                    <img src="Assets/OurSpaces.jpg" alt="ROOM ONLY HIRE"> 
+                    <img src="Assets/Room-Only-Hire.jpg" alt="ROOM ONLY HIRE"> 
                 </div>
                 <div class="Image-text">
                     <P>ROOM ONLY HIRE</P>
@@ -1111,29 +1271,32 @@
             <!-- Content -->
             <section class="Text-container" id="ROOM ONLY HIRE">
                 <!-- Dine-Box -->
-                <div class="Dine">
+                <!-- <div class="Dine">
                     <p><strong></strong>Dine</strong> - £30.00 per person</p>
-                </div>
+                </div> -->
     
                 <!-- Normal Content -->
                 <div class="Normal-text">
-                    <p>
-                        Meet. Train. Play. At Novotel Edinburgh Park, the ultimate 4-star venue for all your 
-                        <br>meeting and event needs. <br> 
-                        Our well-equipped event spaces can accommodate parties of up to 180 guests. <br>
-                        Facilities include experienced event staff, high speed WiFi access, fully air- <br> 
-                        conditioned rooms and high quality audio visual equipment. <br> 
-                        Located next to Edinburgh Park train station and directly off the M8, Novotel <br> 
-                        Edinburgh Park benefits from exceptional access. Edinburgh Airport and City Centre <br> 
-                        can be accessed via regular buses or trams.
-                        <hr>
-                    </p>
-                    <br />
-                    <p>Enter a world of possibilities.</p>
+                    <p class="food-name">Half Day from £185.00 | Full Day from £250.00</p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+                    <hr>
+                      <p class="food-name">This package includes:- <br>
+                        Complimentary parking <br>
+                        Screen and Projector/ LCD screen <br>
+                        Novotel stationary <br>
+                        1 Flipchart <br>
+                        Bottled water throughout the day <br>
+                        High-speed Wi-Fi <br>       
+                        </p>   
+                    <hr>
                 </div>
     
                 <!-- Table -->
-                <div class="table-container">
+                <!-- <div class="table-container">
                 <table>
                     <thead>
                         <tr>
@@ -1237,10 +1400,9 @@
                             <td>_</td>
                             <td>10</td>
                           </tr>
-                        <!-- Add more rows as needed -->
                     </tbody>
                 </table>
-                </div>
+                </div> -->
             </section>
             </section>
 
@@ -1249,7 +1411,7 @@
             <section class="Image-container">
                 <div class="Image-url">
                     <!-- Inline image url with external Style -->
-                    <img src="Assets/OurSpaces.jpg" alt="BABY SHOWER PACKAGE"> 
+                    <img src="Assets/Baby-Shower-Package.png" alt="BABY SHOWER PACKAGE"> 
                 </div>
                 <div class="Image-text">
                     <P>BABY SHOWER PACKAGE</P>
@@ -1260,28 +1422,26 @@
             <section class="Text-container" id="BABY SHOWER PACKAGE">
                 <!-- Dine-Box -->
                 <div class="Dine">
-                    <p><strong></strong>Dine</strong> - £30.00 per person</p>
+                    <p><strong></strong></strong>£29.95 per person</p>
                 </div>
     
                 <!-- Normal Content -->
                 <div class="Normal-text">
-                    <p>
-                        Meet. Train. Play. At Novotel Edinburgh Park, the ultimate 4-star venue for all your 
-                        <br>meeting and event needs. <br> 
-                        Our well-equipped event spaces can accommodate parties of up to 180 guests. <br>
-                        Facilities include experienced event staff, high speed WiFi access, fully air- <br> 
-                        conditioned rooms and high quality audio visual equipment. <br> 
-                        Located next to Edinburgh Park train station and directly off the M8, Novotel <br> 
-                        Edinburgh Park benefits from exceptional access. Edinburgh Airport and City Centre <br> 
-                        can be accessed via regular buses or trams.
-                        <hr>
-                    </p>
-                    <br />
-                    <p>Enter a world of possibilities.</p>
+                    <br>
+                    <hr>
+                    <p class="food-name">This package includes:- <br>
+                    Room hire <br>
+                    Our specially created afternoon tea <br>
+                    Room decorations <br>
+                    Gift for the mum to be <br>         
+                    </p>   
+                    <br>
+                    <p class="note" style="font-size: 12px;">*Dietary requirements catered for on request</p>
+                    <hr>
                 </div>
     
                 <!-- Table -->
-                <div class="table-container">
+                <!-- <div class="table-container">
                 <table>
                     <thead>
                         <tr>
@@ -1385,10 +1545,9 @@
                             <td>_</td>
                             <td>10</td>
                           </tr>
-                        <!-- Add more rows as needed -->
                     </tbody>
                 </table>
-                </div>
+                </div> -->
             </section>
             </section>
 
@@ -1397,7 +1556,7 @@
             <section class="Image-container">
                 <div class="Image-url">
                     <!-- Inline image url with external Style -->
-                    <img src="Assets/OurSpaces.jpg" alt="REMEMBRANCE PACKAGE"> 
+                    <img src="Assets/Rememberance-Package.png" alt="REMEMBRANCE PACKAGE"> 
                 </div>
                 <div class="Image-text">
                     <P>REMEMBRANCE PACKAGE</P>
@@ -1407,29 +1566,40 @@
             <!-- Content -->
             <section class="Text-container" id="REMEMBRANCE PACKAGE">
                 <!-- Dine-Box -->
-                <div class="Dine">
+                <!-- <div class="Dine">
                     <p><strong></strong>Dine</strong> - £30.00 per person</p>
-                </div>
+                </div> -->
     
                 <!-- Normal Content -->
                 <div class="Normal-text">
-                    <p>
-                        Meet. Train. Play. At Novotel Edinburgh Park, the ultimate 4-star venue for all your 
-                        <br>meeting and event needs. <br> 
-                        Our well-equipped event spaces can accommodate parties of up to 180 guests. <br>
-                        Facilities include experienced event staff, high speed WiFi access, fully air- <br> 
-                        conditioned rooms and high quality audio visual equipment. <br> 
-                        Located next to Edinburgh Park train station and directly off the M8, Novotel <br> 
-                        Edinburgh Park benefits from exceptional access. Edinburgh Airport and City Centre <br> 
-                        can be accessed via regular buses or trams.
-                        <hr>
-                    </p>
-                    <br />
-                    <p>Enter a world of possibilities.</p>
+                    <hr>
+                    <p class="food-name"> <strong>Option 1</strong> - The classic spread £17.95 per person</p>
+                    <br>
+                      <p class="food-description">This package includes:- <br>
+                        Room hire <br>
+                        Selection of finger sandwiches with assorted fillings <br> Warm sausage rolls. <br>
+                        Freshly brewed tea & coffee <br>
+                        Selection of biscuits <br>
+                        Add on home-made soup for an additional £1.50pp       
+                        </p>   
+                        <br>
+                      <p class="food-name"><strong>Option 2 </strong>- A hearty choice £21.95 per person</p>
+                      <br>
+                        <p class="food-description">This package includes:- <br>
+                          Room hire <br>
+                          Selection of finger sandwiches with assorted fillings <br> Homemade soup <br>
+                          Warm sausage rolls <br>
+                          Cakes & scones <br>
+                          Freshly brewed tea & coffee <br>
+                          Selection of biscuits        
+                          </p>   
+                          <hr>
+                          <br>
+                    <p class="note" style="font-size: 12px;">*Dietary requirements catered for on request</p>
                 </div>
     
                 <!-- Table -->
-                <div class="table-container">
+                <!-- <div class="table-container">
                 <table>
                     <thead>
                         <tr>
@@ -1533,10 +1703,9 @@
                             <td>_</td>
                             <td>10</td>
                           </tr>
-                        <!-- Add more rows as needed -->
                     </tbody>
                 </table>
-                </div>
+                </div> -->
             </section>
             </section>
 
@@ -1555,29 +1724,33 @@
             <!-- Content -->
             <section class="Text-container" id="CONTACT US">
                 <!-- Dine-Box -->
-                <div class="Dine">
+                <!-- <div class="Dine">
                     <p><strong></strong>Dine</strong> - £30.00 per person</p>
-                </div>
+                </div> -->
     
                 <!-- Normal Content -->
                 <div class="Normal-text">
-                    <p>
-                        Meet. Train. Play. At Novotel Edinburgh Park, the ultimate 4-star venue for all your 
-                        <br>meeting and event needs. <br> 
-                        Our well-equipped event spaces can accommodate parties of up to 180 guests. <br>
-                        Facilities include experienced event staff, high speed WiFi access, fully air- <br> 
-                        conditioned rooms and high quality audio visual equipment. <br> 
-                        Located next to Edinburgh Park train station and directly off the M8, Novotel <br> 
-                        Edinburgh Park benefits from exceptional access. Edinburgh Airport and City Centre <br> 
-                        can be accessed via regular buses or trams.
-                        <hr>
-                    </p>
-                    <br />
-                    <p>Enter a world of possibilities.</p>
+                    <img src="Assets/" alt="qr" style="height: 20%; width: 20%;">
+                    <br><br><br>
+                    <p class="menu-heading"> <strong>Bespoke packages available <br>
+                      For more information or to discuss:</strong></p>
+                    <br>
+                      <p class="food-name">Tel: +44 (0)131 446 5643 <br>
+                        Email: h6515-sb@accor.com <br>
+                        15 Lochside Avenue, Hermiston Gait Retail Park, <br> 
+                        Edinburgh EH12 9DJ Sat nav: use EH11 4DG       
+                        </p>   
+                        <br>
+                        <img src="" alt="Map" style="height: 60%; width: 60%;">
+                        <br><br><br>
+                        <div class="column">
+                          <div class="column-1">@novotel_edinburghpark</div>
+                          <div class="column-2">@NovotelEdinburghPark</div>
+                        </div>
                 </div>
     
                 <!-- Table -->
-                <div class="table-container">
+                <!-- <div class="table-container">
                 <table>
                     <thead>
                         <tr>
@@ -1681,10 +1854,9 @@
                             <td>_</td>
                             <td>10</td>
                           </tr>
-                        <!-- Add more rows as needed -->
                     </tbody>
                 </table>
-                </div>
+                </div> -->
             </section>
             </section>
 
